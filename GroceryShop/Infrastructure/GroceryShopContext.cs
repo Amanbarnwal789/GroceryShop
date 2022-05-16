@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using GroceryShop.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,8 @@ namespace GroceryShop.Infrastructure
         public GroceryShopContext(DbContextOptions<GroceryShopContext> options)
             :base(options)
         {
-
         }
+
+        public DbSet<Page> Pages { get; set; }
     }
 }
