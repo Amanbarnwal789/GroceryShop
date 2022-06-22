@@ -60,7 +60,7 @@ namespace GroceryShop
                 
                 endpoints.MapControllerRoute(
                     "products",
-                    "products/{categorySlug?}",
+                    "products/{categorySlug}",
                     defaults: new { controller = "Products", action = "ProductsByCategory" }
                 );
 
